@@ -254,6 +254,9 @@ class Ui_MainWindow(object):
 
 if __name__ == "__main__":
     import sys
+    import os
+    if not os.path.exists('labels'):
+        os.makedirs('labels')
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     MainWindow.setWindowIcon(QtGui.QIcon('logo.png'))
