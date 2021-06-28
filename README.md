@@ -20,22 +20,28 @@ Navigate to the **looking_experiment** folder:
 cd looking_experiment
 ```
 
-Install the provided environment using:
+Create a virtual environment using:
 
 ```
-conda env create --name looking_experiment --file environment.yml
+python3 -m venv looking_env
 ```
 
 Then activate the environment:
 
 ```
-conda activate looking_experiment
+source looking_env/bin/activate
 ```
 
-Note: To deactivate the environment, use 
+Note: To deactivate the environment, use:
 
 ```
-conda deactivate
+deactivate
+```
+
+Install the librairies using:
+
+```
+pip install -r requirements.txt
 ```
 
 ## Chosing a dataset
