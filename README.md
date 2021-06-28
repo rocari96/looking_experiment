@@ -76,10 +76,18 @@ There are shortcuts you can use to label the images quicker:
 - **o**: labels the image as **not looking** and goes to next image.
 - **p**: labels the image as **don't know** and goes to next image.
 
--**a**: goes to previous image.
--**d**: goes to next image.
+You can also navigate between the images.
+- **a**: goes to previous image.
+- **d**: goes to next image.
 
+You have to label all the images at once for the result to be saved. 
 When you are done with the task, a message will pop on the screen telling you that all images have been labelled, you can then quit the program.
+
+To double check that all images have been labeled, please run:
+```
+python check_completed dataset_name
+```
+
 
 ## Output
 
