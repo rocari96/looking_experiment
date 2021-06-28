@@ -14,15 +14,13 @@ Be sure to have the **Anaconda** distribution.
 
 If you do not have **Anaconda** installed, you can download the Python 3 version here: https://www.anaconda.com/distribution/
 
-Then install the provided environment:
-
 Navigate to the **looking_experiment** folder: 
 
 ```
 cd looking_experiment
 ```
 
-Install the environment using:
+Install the provided environment using:
 
 ```
 conda env create --name looking_experiment --file environment.yml
@@ -34,11 +32,55 @@ Then activate the environment:
 conda activate looking_experiment
 ```
 
-To deactivate the environment, use 
+Note: To deactivate the environment, use 
 
 ```
 conda deactivate
 ```
 
+## Chosing a dataset
 
+We run this experiment on multiple datasets, please select one dataset that is unlabeled and write your firstname on the corresponding row of the following spreadsheet to avoid duplicates. https://docs.google.com/spreadsheets/d/1QUayKcOI0bqS5Dc5P2gvrjBFxdZIqXJ4GrpVB_vPbHo/edit?usp=sharing
+
+You can use the **link** column to download the zip file that contains the dataset.
+Then unzip it in the **looking_experiment** folder.
+
+The datasets are either images (full body, head or eye crops), keypoints (full body, body or head) or a combination of image and keypoints.
+
+
+## Run the program
+To run the program, use
+```
+python main.py
+```
+
+In the User-Interface:
+
+Go to File -> Open, then choose the dataset's folder you extracted.
+It will show the first instance that you have to label.
+
+**Task:** You need to guess if the person is looking or not at our camera from the image you see on screen.
+There are three possible labels:
+- **looking**: the person is looking at us.
+- **not looking**: the person is not looking at us.
+- **don't know**: it is impossible to say from what we see.
+
+There are shortcuts you can use to label the images quicker:
+- **i**: labels the image as **looking** and goes to next image.
+- **o**: labels the image as **not looking** and goes to next image.
+- **p**: labels the image as **don't know** and goes to next image.
+
+-**a**: goes to previous image.
+-**d**: goes to next image.
+
+When you are done with the task, a message will pop on the screen telling you that all images have been labelled, you can then quit the program.
+
+## Output
+
+Once all the images have been labeled, a json file will be saved in the **labels** folder in the format **dataset_name.json**.
+Please copy and paste this json file to the [following location](https://drive.google.com/drive/folders/1GjnfDoC3mYXpVfzL2n9vZySOnSJvXoiQ?usp=sharing) and change the status of the dataset in the [spreadsheet](https://docs.google.com/spreadsheets/d/1QUayKcOI0bqS5Dc5P2gvrjBFxdZIqXJ4GrpVB_vPbHo/edit?usp=sharing) to **completed**.
+
+
+Thank you for your help. 
+If you have any question, you can send them to romain.caristan@epfl.ch
 
