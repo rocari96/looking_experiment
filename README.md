@@ -10,9 +10,6 @@ Then clone the repository:
 git clone https://github.com/rocari96/looking_experiment.git
 ```
 
-Be sure to have the **Anaconda** distribution.
-
-If you do not have **Anaconda** installed, you can download the Python 3 version here: https://www.anaconda.com/distribution/
 
 Navigate to the **looking_experiment** folder: 
 
@@ -46,15 +43,16 @@ pip install -r requirements.txt
 
 ## Chosing a dataset
 
-We run this experiment on multiple datasets, please select one dataset that is unlabeled and write your firstname on the corresponding row of the following spreadsheet to avoid duplicates. https://docs.google.com/spreadsheets/d/1QUayKcOI0bqS5Dc5P2gvrjBFxdZIqXJ4GrpVB_vPbHo/edit?usp=sharing
+We run this experiment on multiple datasets, please select one dataset that is unlabeled and please write your firstname on the corresponding row of the following spreadsheet. https://docs.google.com/spreadsheets/d/1QUayKcOI0bqS5Dc5P2gvrjBFxdZIqXJ4GrpVB_vPbHo/edit?usp=sharing
 
-You can use the **link** column to download the zip file that contains the dataset.
+You can use the **link** column to download the zip file that contains the dataset you will label.
 Then unzip it in the **looking_experiment** folder.
 
 The datasets are either images (full body, head or eye crops), keypoints (full body, body or head) or a combination of image and keypoints.
 
 
 ## Run the program
+
 To run the program, use
 ```
 python main.py
@@ -65,7 +63,10 @@ In the User-Interface:
 Go to File -> Open, then choose the dataset's folder you extracted.
 It will show the first instance that you have to label.
 
-**Task:** You need to guess if the person is looking or not at our camera from the image you see on screen.
+
+## Task
+
+You need to guess if the person is looking or not at our camera from the image you see on screen.
 There are three possible labels:
 - **looking**: the person is looking at us.
 - **not looking**: the person is not looking at us.
@@ -81,7 +82,9 @@ You can also navigate between the images.
 - **d**: goes to next image.
 
 You have to label all the images at once for the result to be saved. 
-When you are done with the task, a message will pop on the screen telling you that all images have been labelled, you can then quit the program.
+When you are done with the task, a message will pop on the screen telling you that all images have been labelled.
+It will save the output with your annotations.
+You can then quit the program.
 
 To double check that all images have been labeled, please run:
 ```
