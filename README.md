@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 ## Chosing a dataset
 
-We run this experiment on multiple datasets, please select one dataset that is **uncompleted** and please write your firstname on the corresponding row of the following spreadsheet. https://docs.google.com/spreadsheets/d/1QUayKcOI0bqS5Dc5P2gvrjBFxdZIqXJ4GrpVB_vPbHo/edit?usp=sharing
+We run this experiment on multiple datasets, please select one dataset that is **uncomplete** and please write your firstname on the corresponding row of the following spreadsheet. https://docs.google.com/spreadsheets/d/1QUayKcOI0bqS5Dc5P2gvrjBFxdZIqXJ4GrpVB_vPbHo/edit?usp=sharing
 
 You can use the **link** column to download the zip file that contains the dataset you will label.
 Then unzip it in the **looking_experiment** folder.
