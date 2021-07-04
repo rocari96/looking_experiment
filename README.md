@@ -88,7 +88,7 @@ You can then quit the program.
 
 To double check that all images have been labeled, please run:
 ```
-python check_completed dataset_name.py
+python check_completed.py dataset_name
 ```
 
 
