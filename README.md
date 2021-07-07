@@ -66,7 +66,7 @@ It will show the first instance that you have to label.
 
 ## Task
 
-You need to guess if the person is looking or not at our camera from the image you see on screen.
+You need to guess if there is an eye contact between the person and our camera from the image you see on screen.
 There are three possible labels:
 - **looking**: the person is looking at us.
 - **not looking**: the person is not looking at us.
