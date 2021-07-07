@@ -138,7 +138,9 @@ class Ui_MainWindow(object):
 
     def show_im(self, im):
         im_size = cv2.imread(im).shape
-        if 'body' in self.type:
+        if self.type == 'full_images':
+            im_size = (1800, 1200)
+        elif 'body' in self.type:
             im_size = self.size_full
         elif 'head' in self.type:
             im_size = self.size_head
@@ -255,8 +257,8 @@ class Ui_MainWindow(object):
 if __name__ == "__main__":
     import sys
     import os
-    if not os.path.exists('labels'):
-        os.makedirs('labels')
+    if not os.path.exists('./labels'):
+        os.makedirs('./labels')
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     MainWindow.setWindowIcon(QtGui.QIcon('logo.png'))
